@@ -4,14 +4,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: hwb(43 73% 5%);
+    color: #0d38fa;
 }
 
 /* Header Styles */
 header {
     background-color: #333;
-    color: #fff;
+    color: #db28e4;
     padding: 10px 0;
 }
 
@@ -28,7 +28,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #11eb44;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -36,13 +36,12 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: #555;
+    background-color: #f41515;
     border-radius: 5px;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('images/hero.jpg'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -50,9 +49,17 @@ header nav ul li a:hover {
     color: #fff;
 }
 
+h1 {
+
+    color: #22cc5e;
+}
+
+
+
 .hero h1 {
     font-size: 48px;
     margin: 0;
+    color: #000000e9;
 }
 
 .hero p {
@@ -77,8 +84,8 @@ header nav ul li a:hover {
 
 /* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #69a0e3;
+    color: hsl(71, 82%, 51%);
     text-align: center;
     padding: 15px 0;
     margin-top: 20px;
