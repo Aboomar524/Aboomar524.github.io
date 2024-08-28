@@ -1,89 +1,84 @@
-/* General Styles */
+:root {
+    --primary-blue: #264653;
+    --accent-yellow: #e9c46a;
+    --secondary-red: #e76f51;
+    --text-background: #f4a261;
+    --background-cream: #f1faee;
+}
+
 body {
     font-family: Arial, sans-serif;
+    color: var(--primary-blue);
+    background-color: var(--background-cream);
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
-    color: #333;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    background-color: var(--primary-blue);
+    padding: 20px;
+    text-align: center;
 }
 
-header nav ul {
-    list-style: none;
+nav ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    overflow: hidden;
 }
 
-header nav ul li {
+nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-header nav ul li a {
-    color: #fff;
+nav ul li a {
+    color: var(--accent-yellow);
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
-    padding: 5px 10px;
 }
 
-header nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
+nav ul li a:hover {
+    color: var(--secondary-red);
 }
 
-/* Hero Section */
 .hero {
-    background-image: url('images/hero.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
     text-align: center;
-    padding: 60px 20px;
-    color: #fff;
+    padding: 50px;
+    background-color: var(--text-background);
+    color: var(--primary-blue);
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin: 0;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: var(--primary-blue);
 }
 
 .hero p {
-    font-size: 20px;
-    margin: 10px 0 20px;
+    font-size: 1.5em;
+    margin-bottom: 30px;
 }
 
 .hero .btn {
-    display: inline-block;
+    background-color: var(--secondary-red);
+    color: var(--background-cream);
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
     text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
 .hero .btn:hover {
-    background-color: #555;
+    background-color: var(--accent-yellow);
+    color: var(--primary-blue);
 }
 
-/* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--primary-blue);
+    color: var(--accent-yellow);
     text-align: center;
-    padding: 15px 0;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 0;
+    padding: 10px 0;
 }
