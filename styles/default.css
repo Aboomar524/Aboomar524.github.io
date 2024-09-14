@@ -1,93 +1,96 @@
+@charset "UTF-8";
+
+/* Color Scheme */
+
+:root {
+    --dark-blue: #0d1f2d;
+    --medium-gray: #546a7b;
+    --light-gray: #9ea3b0;
+    --pink: #fae1df;
+    --tan: #e4c3ad;
+    --yellow: #f7f600;
+}
+
 /* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: hwb(43 73% 5%);
-    color: #0d38fa;
+    background-color: var(--medium-gray);
+    color: var(--pink);
 }
 
-/* Header Styles */
+header,
+main,
+footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 95%;
+    padding: 20px;
+}
+
 header {
-    background-color: #333;
-    color: #db28e4;
+    background-color: var(--dark-blue);
+    color: var(--pink);
     padding: 10px 0;
+    text-align: center;
 }
 
 header nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    margin: 0;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    display: inline;
+    margin: 0 10px;
 }
 
 header nav ul li a {
-    color: #11eb44;
+    color: var(--pink);
     text-decoration: none;
     font-weight: bold;
-    font-size: 16px;
-    padding: 5px 10px;
 }
 
 header nav ul li a:hover {
-    background-color: #f41515;
-    border-radius: 5px;
+    opacity: 0.8;
 }
 
-/* Hero Section */
-.hero {
-    background-size: cover;
-    background-position: center;
+main h1 {
     text-align: center;
-    padding: 60px 20px;
-    color: #fff;
+    margin-bottom: 0;
 }
 
-h1 {
-
-    color: #22cc5e;
+main p {
+    text-align: center;
+    font-size: 1.2rem;
 }
 
-
-
-.hero h1 {
-    font-size: 48px;
-    margin: 0;
-    color: #000000e9;
-}
-
-.hero p {
-    font-size: 20px;
-    margin: 10px 0 20px;
-}
-
-.hero .btn {
+main .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: var(--dark-blue);
+    color: var(--pink);
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.hero .btn:hover {
-    background-color: #555;
-}
-
-/* Footer Styles */
-footer {
-    background-color: #69a0e3;
-    color: hsl(71, 82%, 51%);
     text-align: center;
-    padding: 15px 0;
+    margin-top: 20px;
+}
+
+main .btn:hover {
+    background-color: var(--pink);
+    color: var(--dark-blue);
+}
+
+footer {
+    background-color: var(--dark-blue);
+    color: var(--pink);
+    text-align: center;
+    padding: 20px 0;
     margin-top: 20px;
 }
 
