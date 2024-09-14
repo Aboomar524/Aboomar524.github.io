@@ -62,11 +62,18 @@ header nav ul li a:hover {
 main h1 {
     text-align: center;
     margin-bottom: 0;
+    color: aquamarine;
 }
 
 main p {
     text-align: center;
     font-size: 1.2rem;
+
+}
+
+#daily-text {
+    color: var(--yellow);
+    /* Or use the specific hex color code #f7f600 */
 }
 
 main .btn {
