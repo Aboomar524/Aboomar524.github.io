@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Calculate the day of the month (1-31), normalize to 0-6 to index texts array
     const dayOfMonth = today.getDate();
     const index = (dayOfMonth - 1) % texts.length;
-
+    
     // Get the element where the text will be displayed
     const textElement = document.getElementById("daily-text");
 
