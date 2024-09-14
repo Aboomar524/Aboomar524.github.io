@@ -9,6 +9,9 @@
     --pink: #fae1df;
     --tan: #e4c3ad;
     --yellow: #f7f600;
+    --red: #ff0000;
+    /* Define the red color */
+    --pink: #fae1df
 }
 
 /* General Styles */
@@ -50,13 +53,18 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: var(--pink);
     text-decoration: none;
     font-weight: bold;
+    color: var(--pink);
+    /* Default link color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.3s ease, font-size 0.3s ease;
 }
 
-header nav ul li a:hover {
-    opacity: 0.8;
+nav ul li a:hover {
+    color: var(--red);
+    font-size: 1.2rem;
 }
 
 main h1 {
